@@ -1,0 +1,88 @@
+/* Начало обнуляющих стилей */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*after{
+	-moz-box=siting: border-box;
+	-webkit-box-siting: border-box;
+	box-sizing: border-box;
+}
+:focus, active{outline: none;};
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::ms-clear{display: none;}
+button{coursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visisted{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+	font-family: Arial;
+}
+/* Конец обнуляющих стилей */
+
+/* Навигационное меню */
+.sidebar {
+	width: 100%;
+	background: #0E2426;
+	position: fixed;
+	overflow: auto;
+}
+/* Сайдбар ссылка */
+.sidebar a {
+	text-align: center;
+	color: #ECF0F1;
+	background: #0E2426;
+	padding:0px 15px;
+	line-height:37px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 550;
+	font-size: 14px;
+}
+/* Активная ссылка */
+.sidebar a.active {
+	color: #9FA2A2;
+}
+/* Ссылки при наведении мыши */
+.sidebar a:hover {
+	text-decoration: underline;
+}
+/* Выравнивание ссылок панели по центру, если ширина не превышает 540 px */
+@media screen and (min-width: 540px) {
+	.sidebar {
+		display: flex;
+		justify-content: center;
+	}
+}
+/* Изменение панели, если ширина превышает 540 px */
+@media screen and (max-width: 540px) {
+	.sidebar {
+		position: fixed;
+	}
+	.sidebar a{
+		display: block;
+	}
+}
