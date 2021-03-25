@@ -42,6 +42,13 @@ body{
 }
 /* Конец обнуляющих стилей */
 
+/* Задний фон на странице */
+body {
+background-image: url(../img/background.png);
+background-position: center 37px;
+background-repeat: no-repeat;
+}
+
 /* Навигационное меню */
 .sidebar {
 	width: 100%;
@@ -60,7 +67,6 @@ body{
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 550;
-	font-size: 14px;
 }
 /* Активная ссылка */
 .sidebar a.active {
@@ -70,6 +76,11 @@ body{
 .sidebar a:hover {
 	text-decoration: underline;
 }
+/* Другая часть страницы */
+.footertag img{
+	margin-top: 37px;
+}
+
 /* Выравнивание ссылок панели по центру, если ширина не превышает 540 px */
 @media screen and (min-width: 540px) {
 	.sidebar {
@@ -79,11 +90,23 @@ body{
 }
 /* Изменение панели, если ширина превышает 540 px */
 @media screen and (max-width: 540px) {
+	body {
+		background-position: center 148px;
+		background-size: 200%;
+	}
 	.sidebar {
 		position: fixed;
 	}
 	.sidebar a{
 		display: block;
 		background: #202020;
+	}
+}
+/* Изменение фона, если ширина превышает 650 px */
+@media screen and (max-width: 640px) {
+	body {
+		background-image: url(../img/background.png);
+		background-size: 200%;
+		background-repeat: no-repeat;
 	}
 }
