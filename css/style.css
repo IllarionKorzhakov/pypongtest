@@ -78,6 +78,10 @@ body {
 	text-decoration: underline;
 }
 
+a {
+	color: #ECF0F1;
+}
+
 /* Стили блока */
 .title {
 	display: inline-block;
@@ -107,6 +111,33 @@ body {
 	text-transform: uppercase;
 }
 
+/* Стили кнопок скачивания */
+.download-button {
+	color: #ECF0F1;
+	background: #F07E40;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 2px;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+.pos-button {
+	text-align: center;
+	position: relative;
+	margin-top: 250px;
+}
+
+#activ {
+	background: #E74C3C;
+}
+
+#not-activ {
+	margin-right: 10px;
+	background: #2C3E50;
+}
+
+/* Стили "подвала" */
 #footer {
 	height: 20px;
 	padding: 20px 0px 40px 0px;
@@ -116,4 +147,36 @@ body {
 	width: 100%;
 	text-align: center;
 	font-synthesis: weight style;
+}
+
+@media screen and (max-width: 440px) {
+	.ul-menu {
+		display: block;
+		text-align: center;
+	}
+
+	body {
+		/*background: url(../image/background3.png) center 835px no-repeat, url(../image/background2.png) center 360px no-repeat, url(../image/background.png) center  no-repeat fixed;*/
+		background: url(../image/background3.png) center 983px no-repeat, url(../image/background2.png) center 508px no-repeat, url(../image/background.png) center 148px no-repeat;
+	}
+
+}
+
+@media screen and (max-width: 533px) {
+	.download-button {
+		display: block;
+		width: 60%;
+	}
+	#not-activ {
+		width: 50%;
+		margin-top: 20px;
+		margin-left: 20%;
+	}
+	#activ {
+		width: 30%;
+		margin-left: 30%;
+	}
+	.pos-button {
+		margin-top: 190px;
+	}
 }
