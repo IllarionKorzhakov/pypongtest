@@ -4,19 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 
 	<title>Pypong Game - website</title>
 </head>
 <body>
 	<!--Меню навигации сайта-->
 	<ul class="ul-menu">
-		<li class="li-menu"><a class="a-menu" href="">pypong</a></li>
-		<li class="li-menu"><a class="a-menu" href="">скачать</a></li>
-		<li class="li-menu"><a class="a-menu" href="">новости</a></li>
-		<li class="li-menu"><a class="a-menu" href="">sus</a></li>
+		<li class="li-menu"><a class="a-menu" id="button-mini-menu">Скрыть</a></li>
+		<li class="li-menu"><a class="a-menu" id="pypong" href="">pypong</a></li>
+		<li class="li-menu"><a class="a-menu" id="download" href="tabs/download-new.html">скачать</a></li>
+		<li class="li-menu"><a class="a-menu" id="news" href="tabs/news.html">новости</a></li>
+		<li class="li-menu"><a class="a-menu" id="info" href="tabs/about.html">об игре</a></li>
 	</ul>
-	
+
 	<!--Информация об игре-->
 		<span class="title" >
 			<a href="index.html" class="text">pypong</a>
@@ -24,7 +28,7 @@
 		</span>
 
 	<!--Ссылки для быстрого скачивания-->
-	<p class="pos-button"><a class="download-button" id="activ" href="">Скачать 0.14.1</a> <a class="download-button" id="not-activ" href="">Скачать старые версии</a></p>
+	<p class="pos-button"><a class="download-button" id="activ" href="tabs/download-new.html">Скачать 0.14.2</a> <a class="download-button" id="not-activ" href="tabs/download-old.html">Скачать старые версии</a></p>
 
 	<!--Информация об игре 1-->
 	<br>
@@ -99,7 +103,7 @@
 	<br>
 
 	<div id="footer">
-		&copy; Pypong 2021 Peach Studio <br> <a href="">Telegram</a> <a href="">Вконтакте</a> <a href="">Facebook</a>
+		Pypong 2021 Peach Studio <br> <a target="blank" href="https://t.me/PypongGame">Telegram</a> <a target="blank" href="https://vk.com/pyponggame">Вконтакте</a> <a target="blank" href="https://www.facebook.com/groups/pyponggame">Facebook</a>
 	</div>
 </body>
 </html>
