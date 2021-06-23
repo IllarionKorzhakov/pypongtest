@@ -51,7 +51,7 @@ body {
 .ul-menu {
 	width: 100%;
 	display: flex;
-	background:#0E2426;
+	background:#14181f;
 	justify-content: center;
 }
 
@@ -66,7 +66,7 @@ body {
 	font-family: Arial;
 	line-height:37px;
 	color:#ECF0F1;
-	background:#0E2426;
+	background:#14181f;
 	padding:0 15px;
 
 	text-align:center;
@@ -76,6 +76,7 @@ body {
 
 .a-menu:hover {
 	text-decoration: underline;
+	color: #558ad6;
 }
 
 a {
@@ -141,7 +142,7 @@ a {
 #footer {
 	height: 20px;
 	padding: 20px 0px 40px 0px;
-	background: #0E2426;
+	background: #14181f;
 	color: #ECF0F1;
 	font-size: 19px;
 	width: 100%;
@@ -153,11 +154,13 @@ a {
 	.ul-menu {
 		display: block;
 		text-align: center;
+
+		height: auto;
 	}
 
 	body {
-		/*background: url(../image/background3.png) center 835px no-repeat, url(../image/background2.png) center 360px no-repeat, url(../image/background.png) center  no-repeat fixed;*/
-		background: url(../image/background3.png) center 983px no-repeat, url(../image/background2.png) center 508px no-repeat, url(../image/background.png) center 148px no-repeat;
+		/*background: url(../image/background3.png) center 872px no-repeat, url(../image/background2.png) center 397px no-repeat, url(../image/background.png) center 0 no-repeat fixed;*/
+		background: url(../image/background3.png) center 1020px no-repeat, url(../image/background2.png) center 545px no-repeat, url(../image/background.png) center 148px no-repeat;
 	}
 
 }
